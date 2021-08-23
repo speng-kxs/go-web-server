@@ -15,3 +15,21 @@ Please write it as if the container will be used in production.
 It exposes a web server on port 3030 and logs to STDOUT.  The port is configurable by setting the PORT environment variable.  
 
 It has several routes that return status code 200 and some data: `/health`, `/hello`, and `/keyword`. All other routes will return 404: "404 page not found".  
+
+
+## Makefile
+Build the image
+```
+make build-serve
+```
+
+run the image
+```
+make web
+```
+
+test the image
+```
+make keyword
+make test
+```
